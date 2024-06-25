@@ -1,0 +1,27 @@
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Evita barras de rolagem */
+  }
+  
+  .video-background {
+    position: relative; /* Ou outra posição que se adeque ao layout responsivo */
+    height: 100vh; /* Ajuste conforme necessário */
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajuste conforme necessário */
+  }
+
+  #vid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+}
