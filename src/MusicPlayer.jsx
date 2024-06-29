@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import audioSrc from './assets/spidey.mp3';
 import './MusicPlayer.css'; // Arquivo de estilos CSS (opcional)
+import Button from './button';
 
 const MusicPlayer = () => {
   const audioRef = useRef(null);
@@ -16,8 +17,8 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="music-player" ref={playerRef}>
-      <button onClick={handlePlay}>Clique aqui!</button>
+    <div onClick={handlePlay} className="music-player" ref={playerRef}>
+      <Button text="Vamos nessa!" />
       <audio ref={audioRef} src={audioSrc} />
       {/* Outros componentes ou informações do seu player */}
     </div>

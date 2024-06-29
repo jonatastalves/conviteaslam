@@ -10,7 +10,7 @@ const LoadingVideo = () => {
       </video>
       <div className="spinner-overlay">
         <div className="spinner"></div>
-        <div className="loading-text">Bem vindo ao meu convite...</div> {/* Texto adicional */}
+        <div className="loading-text">Carregando aranhaverso do Aslam...</div> {/* Texto adicional */}
       </div>
     </div>
   );
