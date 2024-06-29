@@ -1,11 +1,12 @@
 import React from 'react';
+import videoSrc from './assets/loadingVideo.mp4';
 import './LoadingVideo.css';
 
 const LoadingVideo = () => {
   return (
     <div className="loading-video">
       <video autoPlay muted loop playsInline>
-        <source src="src/assets/loadingVideo.mp4" type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
       <div className="spinner-overlay">
         <div className="spinner"></div>

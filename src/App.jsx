@@ -12,7 +12,7 @@ function App() {
     // Simulação de um processo de carregamento
     setTimeout(() => {
       setLoading(false); // Após 30 segundos, define loading como false
-    }, 30000);
+    }, 10000);
   }, []);
   
 

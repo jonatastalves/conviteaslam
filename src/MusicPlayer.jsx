@@ -1,17 +1,26 @@
-// components/MusicPlayer.js
-import React, { useEffect, useRef  } from 'react';
+import React, { useRef } from 'react';
+import audioSrc from './assets/spidey.mp3';
 import './MusicPlayer.css'; // Arquivo de estilos CSS (opcional)
 
 const MusicPlayer = () => {
-    // /src/assets/spidey.mp3
-   return (
-   
-      <div className="music-player">
-        <iframe src="silence.mp3" allow="autoplay" id="audio"></iframe>
-      <audio src="../src/assets/spidey.mp3" autoPlay />
+  const audioRef = useRef(null);
+  const playerRef = useRef(null);
+
+  const handlePlay = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+    if (playerRef.current) {
+      playerRef.current.style.display = 'none';
+    }
+  };
+
+  return (
+    <div className="music-player" ref={playerRef}>
+      <button onClick={handlePlay}>Clique aqui!</button>
+      <audio ref={audioRef} src={audioSrc} />
       {/* Outros componentes ou informações do seu player */}
     </div>
-   
   );
 };
 

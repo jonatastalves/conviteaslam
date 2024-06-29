@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './VideoBackground.css';
+import videoBack from './assets/backvideo.mp4';
 
 const VideoBackground = () => {
   return (
@@ -9,7 +10,7 @@ const VideoBackground = () => {
       <div className="video-wrap">
         {/* Video */}
         <video id="vid" autoPlay muted loop playsInline>
-          <source src="src/assets/backvideo.mp4" type="video/mp4" />          
+          <source src={videoBack} type="video/mp4" />          
         </video>
       </div>
     </div>
