@@ -1,0 +1,11 @@
+.videoaq{
+    z-index: 1;
+}
+
+.buttonaqui{
+    margin-top: 50%;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
