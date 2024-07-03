@@ -44,7 +44,7 @@ const Principal = () => {
     <div className="backPrincipal">
       <div className='section'>
         {content}
-        <p onClick={handleBackClick}>...Voltar</p>
+        <button className='voltar' onClick={handleBackClick}>Voltar</button>
       </div>
     </div>
   );

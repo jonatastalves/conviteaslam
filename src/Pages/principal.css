@@ -22,9 +22,15 @@
 
 .voltar {
     cursor: pointer;
-    color: red; /* Alterar a cor conforme necessário */
+    color: white; /* Alterar a cor conforme necessário */
     margin-top: 20px;
     text-decoration: underline;
+    padding: 10px;
+    width: 100px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .highlight {
