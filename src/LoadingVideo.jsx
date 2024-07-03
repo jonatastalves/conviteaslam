@@ -11,7 +11,7 @@ const LoadingVideo = () => {
       </video>
       <div className="spinner-overlay">
         <div className="spinner"></div>
-        <div className="loading-text">Carregando aranhaverso do Aslam...</div> {/* Texto adicional */}
+        <div className="loading-text">Carregando Aranhaverso do Aslam...</div> {/* Texto adicional */}
       </div>
     </div>
   );
