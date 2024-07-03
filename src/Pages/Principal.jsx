@@ -2,6 +2,8 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './principal.css';
+import salaoImage from '../assets/salao.jpg';
+import pinImg from '../assets/pin.png'
 
 const Principal = () => {
   const location = useLocation();
@@ -35,9 +37,16 @@ const Principal = () => {
       content = (
         <div>
           <p>A Festa será realizada no salão:</p>
-          <h1>Brucy's Festas e Eventos Almeidenses</h1>
+          <h1>BRUCY'S</h1>
+          <h3>Festas e Eventos Almeidenses</h3>
+          <img id='img' src={salaoImage} alt="" />
+          <br />
+          <br />
+          <p><strong>Clique abaixo e aperte os cintos!</strong></p>
+          <a href="https://maps.app.goo.gl/8s8AcAKtMiFomo3B7" target="_blank" rel="noopener noreferrer">
+            <img id='pin' src={pinImg} alt="Pin" />
+          </a>
           <p>Localizado na Rua do Queimado, 289 - Bento Ribeiro - RJ</p>
-          <img src="../assets/salao.jpg" alt="" />
         </div>
       );        
       break;
