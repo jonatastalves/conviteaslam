@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
 import audioSrc from './assets/spidey.mp3';
 import './MusicPlayer.css'; // Arquivo de estilos CSS (opcional)
@@ -17,8 +18,8 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div onClick={handlePlay} className="music-player" ref={playerRef}>
-      <Button text="Vamos nessa!" imageType='vermelho' />
+    <div id='button1' onClick={handlePlay} className="music-player" ref={playerRef}>
+      <Button  text="Vamos nessa!" imageType='vermelho' />
       <audio ref={audioRef} src={audioSrc} />
       {/* Outros componentes ou informações do seu player */}
     </div>

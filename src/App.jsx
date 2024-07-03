@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoadingVideo from './LoadingVideo';
@@ -14,7 +15,7 @@ function App() {
     // Simulação de um processo de carregamento
     setTimeout(() => {
       setLoading(false); // Após 30 segundos, define loading como false
-    }, 1000);
+    }, 12000);
   }, []);
 
   return (

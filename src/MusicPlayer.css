@@ -19,4 +19,8 @@
     cursor: pointer;
     z-index: 10000; /* Certifique-se de que o botão está na frente do fundo semitransparente */
   }
+
+  #button1{
+    padding-top: 100px;
+  }
   
