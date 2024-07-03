@@ -1,21 +1,34 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './principal.css';
+import ImageButton from '../button'; // Importando o componente ImageButton
 import salaoImage from '../assets/salao.jpg';
 import pinImg from '../assets/pin.png'
 
 const Principal = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const path = location.pathname;
   const userName = location.state?.userName;
 
-  const handleBackClick = () => {
-    navigate('/conviteaslam');
-  };
+  const [storedName, setStoredName] = useState('');
+
+    useEffect(() => {
+        // Carregar o nome do local storage, se disponível
+        let savedName = localStorage.getItem('userName');
+        if (!savedName) {
+            // Se o nome não estiver salvo, pedir ao usuário para digitar
+            savedName = prompt('Por favor, digite seu nome:');
+            if (savedName) {
+                localStorage.setItem('userName', savedName);
+            }
+        }
+        setStoredName(savedName);
+    }, []);
+  
 
   let content;
+
   switch (path) {
     case '/conviteaslam/festa':
       content = (
@@ -61,7 +74,7 @@ const Principal = () => {
     <div className="backPrincipal">
       <div className='section'>
         {content}
-        <button className='voltar' onClick={handleBackClick}>Voltar</button>
+        <ImageButton text='Voltar' imageType='vermelho' routeUsed='/conviteaslam' userName={storedName} />        
       </div>
     </div>
   );
