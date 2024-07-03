@@ -18,7 +18,7 @@ const MusicPlayer = () => {
 
   return (
     <div onClick={handlePlay} className="music-player" ref={playerRef}>
-      <Button text="Vamos nessa!" />
+      <Button text="Vamos nessa!" imageType='vermelho' />
       <audio ref={audioRef} src={audioSrc} />
       {/* Outros componentes ou informações do seu player */}
     </div>

@@ -8,7 +8,7 @@
 }
 
 .background {
-  width: 230px; /* Ajuste conforme necessário */
+  width: 180px; /* Ajuste conforme necessário */
   
 }
 
@@ -18,7 +18,7 @@
   left: 55%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   text-shadow: 1px 1px 2px black; /* Sombra do texto para melhor visibilidade */
   z-index: 1; /* Coloca o texto acima da imagem */
