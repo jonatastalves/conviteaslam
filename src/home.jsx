@@ -8,10 +8,10 @@ function Home() {
         <>
             <div className='videoaq'><VideoBackground /></div>
             <div className='buttonaqui'>
-                <ImageButton text='A Festa' imageType='azul' />
-                <ImageButton text='Localização' imageType='azul' />
-                <ImageButton text='Sugestão de Presentes' imageType='azul' />
-                <ImageButton text='Confirmar Presença' imageType='vermelho' />
+                <ImageButton text='A Festa' imageType='azul' routeUsed='/conviteaslam/festa' />
+                <ImageButton text='Localização' imageType='azul' routeUsed='/conviteaslam/local' />
+                <ImageButton text='Sugestão de Presentes' imageType='azul' routeUsed='/conviteaslam/presentes' />
+                <ImageButton text='Confirmar Presença' imageType='vermelho' routeUsed='/conviteaslam/confirmar' />
             </div>
         </>
     );
