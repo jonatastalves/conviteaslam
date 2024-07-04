@@ -91,7 +91,7 @@ const Principal = () => {
   let content;
 
   switch (path) {
-    case '/conviteaslam/festa':
+    case '/festa':
       content = (
         <div>
           <p>Olá, <strong>{userName || 'querido(a) convidado(a)'}!</strong></p>
@@ -107,7 +107,7 @@ const Principal = () => {
         </div>
       );
       break;
-    case '/conviteaslam/local':
+    case '/local':
       content = (
         <div>
           <p>A Festa será realizada no salão:</p>
@@ -124,7 +124,7 @@ const Principal = () => {
         </div>
       );        
       break;
-      case '/conviteaslam/presentes':
+      case '/presentes':
         content = <Presentes gifts={gifts} />;
         break;
     default:
@@ -135,7 +135,7 @@ const Principal = () => {
     <div className="backPrincipal">
       <div className='section'>
         {content}
-        <ImageButton text='Voltar' imageType='vermelho' routeUsed='/conviteaslam' userName={storedName} />        
+        <ImageButton text='Voltar' imageType='vermelho' routeUsed='/' userName={storedName} />        
       </div>
     </div>
   );

@@ -28,11 +28,11 @@ function App() {
       ) : (
         <div className="content">
           <Routes>
-            <Route path='/conviteaslam' element={<Home />} />
-            <Route path='/conviteaslam/festa' element={<Principal  />} />
-            <Route path='/conviteaslam/local' element={<Principal  />} />
-            <Route path='/conviteaslam/presentes' element={<Principal  />} />
-            <Route path='/conviteaslam/confirmar' element={<RedirectToExternal url="https://forms.gle/bK9ZdUQFdK9cajVY7" />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/festa' element={<Principal  />} />
+            <Route path='/local' element={<Principal  />} />
+            <Route path='/presentes' element={<Principal  />} />
+            <Route path='/confirmar' element={<RedirectToExternal url="https://forms.gle/bK9ZdUQFdK9cajVY7" />} />
 
           </Routes>
         </div>

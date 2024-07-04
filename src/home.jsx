@@ -24,10 +24,10 @@ function Home() {
         <>
             <div className='videoaq'><VideoBackground /></div>
             <div className='buttonaqui'>
-                <ImageButton text='A Festa' imageType='azul' routeUsed='/conviteaslam/festa' userName={storedName} />
-                <ImageButton text='Localização' imageType='azul' routeUsed='/conviteaslam/local' userName={storedName} />
-                <ImageButton text='Sugestão de Presentes' imageType='azul' routeUsed='/conviteaslam/presentes' userName={storedName} />
-                <ImageButton text='Confirmar Presença' imageType='vermelho' routeUsed='/conviteaslam/confirmar' userName={storedName} />
+                <ImageButton text='A Festa' imageType='azul' routeUsed='/festa' userName={storedName} />
+                <ImageButton text='Localização' imageType='azul' routeUsed='/local' userName={storedName} />
+                <ImageButton text='Sugestão de Presentes' imageType='azul' routeUsed='/presentes' userName={storedName} />
+                <ImageButton text='Confirmar Presença' imageType='vermelho' routeUsed='/confirmar' userName={storedName} />
             </div>
         </>
     );
