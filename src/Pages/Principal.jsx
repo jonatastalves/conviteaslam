@@ -38,31 +38,31 @@ const Principal = () => {
     const gifts = [
       {
         image: roupasAslam,
-        title: 'Roupas em Geral',
-        description: 'Roupas para 3 anos',
+        title: 'Roupas',
+        description: 'Tamanho: 3 anos',
         link: 'https://www.google.com/search?q=roupas+infantil&oq=roupas+infantil&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE2NzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8'
       },
       {
         image: calcadoImg,
-        title: 'Calçados em Geral, ele ama bichinhos e heróis',
-        description: 'Descrição do presente 2',
+        title: 'Calçados',
+        description: 'Tamanho: 23/24.',
         link: 'https://www.google.com/search?q=cal%C3%A7ados+infantil&sca_esv=e1d839af44a7b9af&sxsrf=ADLYWIIT-2gr74MpBj1otdK4jJdtzlxBnA%3A1720041292495&ei=TL-FZqD1HeDC5OUP5OWMkAI&oq=cal%C3%A7ados+infan&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2NhbMOnYWRvcyBpbmZhbioCCAAyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKQTUABYug1wAHgBkAEAmAGxAaABuw6qAQQwLjE0uAEDyAEA-AEBmAIOoAKgD8ICChAjGIAEGCcYigXCAgQQIxgnwgIQEC4YgAQY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYQxiKBcICCxAAGIAEGLEDGMkDwgIIEAAYgAQYsQPCAgsQABiABBiSAxiKBcICERAuGIAEGLEDGNEDGIMBGMcBmAMAkgcEMC4xNKAH1WY&sclient=gws-wiz-serp'
       },
       {
         image: brinquedoAslam,
-        title: 'Brinquedos em Geral',
-        description: 'Brinquedos que estimulam a lógica, carrinhos , bonecos, use sua criatividade!',
+        title: 'Brinquedos',
+        description: 'Qualquer brinquedo é bem vindo',
         link: 'https://www.google.com/search?q=cal%C3%A7ados+infantil&sca_esv=e1d839af44a7b9af&sxsrf=ADLYWIIT-2gr74MpBj1otdK4jJdtzlxBnA%3A1720041292495&ei=TL-FZqD1HeDC5OUP5OWMkAI&oq=cal%C3%A7ados+infan&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2NhbMOnYWRvcyBpbmZhbioCCAAyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKQTUABYug1wAHgBkAEAmAGxAaABuw6qAQQwLjE0uAEDyAEA-AEBmAIOoAKgD8ICChAjGIAEGCcYigXCAgQQIxgnwgIQEC4YgAQY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYQxiKBcICCxAAGIAEGLEDGMkDwgIIEAAYgAQYsQPCAgsQABiABBiSAxiKBcICERAuGIAEGLEDGNEDGIMBGMcBmAMAkgcEMC4xNKAH1WY&sclient=gws-wiz-serp'
       },
       {
         image: siliconeMae,
-        title: 'Silicone pra Mamãe',
-        description: 'Silicone bonito pra mamãe ficar com alto estima e nao brigar com o Aslam',
+        title: 'Silicone',
+        description: 'Pra mamãe ficar com alto estima e nao brigar com o Aslam',
         link: 'https://lp.ciadomedico.com.br/plastica-de-mama/?utm_source=google&utm_medium=rede_de_pesquisa&utm_campaign=protese_mamaria&utm_id=cte&utm_term=Protese%20silicone&gad_source=1&gclid=Cj0KCQjw7ZO0BhDYARIsAFttkCi741LW_U4npuQwRtA1HdNgTGVwgP2wyLZE9EUD7QRgQeIS5xIFxdcaAltAEALw_wcB'
       },
       {
         image: carroNovo,
-        title: 'Fiat Toro',
+        title: 'Toro',
         description: 'Pro papai carregar o Aslam com mais conforto e segurança',
         link: 'https://toro.fiat.com.br/'
       },
@@ -74,13 +74,13 @@ const Principal = () => {
       },
       {
         image: maldivasViagem,
-        title: 'Viagem para Maldivas',
+        title: 'Maldivas',
         description: 'Curtir as férias em grande estilo com a família por sua conta',
         link: 'https://www.hurb.com/br/packages/ilhas-maldivas-passagem-aerea-hospedagem/1091929'
       },
       {
         image: play5,
-        title: 'Playstation 5',
+        title: 'PS5',
         description: 'Para criar grandes memórias com o papai jogando',
         link: 'https://www.amazon.com.br/Console-PlayStation%C2%AE5-Marvels-Spider-Man-Limited/dp/B0CCXC3XBQ/ref=asc_df_B0CCXC3XBQ/?tag=googleshopp00-20&linkCode=df0&hvadid=647511901425&hvpos=&hvnetw=g&hvrand=10905143633388456307&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100789&hvtargid=pla-2199567841656&psc=1&mcid=c3f366cb4f3f36c291cdcc22959c8160'
       },

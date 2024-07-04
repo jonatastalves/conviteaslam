@@ -9,7 +9,9 @@ const Presentes = ({ gifts }) => {
     <div className="presentes-container">
       {gifts.map((gift, index) => (
         <div key={index} className="card">
-          <img src={gift.image} alt={gift.title} className="card-image" />
+          <div className="card-image-container">
+            <img src={gift.image} alt={gift.title} className="card-image" />
+          </div>
           <div className="card-content">
             <h3>{gift.title}</h3>
             <p>{gift.description}</p>
@@ -22,14 +24,14 @@ const Presentes = ({ gifts }) => {
 };
 
 Presentes.propTypes = {
-    gifts: PropTypes.arrayOf(
-      PropTypes.shape({
-        image: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-  };
+  gifts: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Presentes;
