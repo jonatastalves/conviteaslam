@@ -52,7 +52,7 @@ const Principal = () => {
         image: brinquedoAslam,
         title: 'Brinquedos',
         description: 'Qualquer brinquedo é bem vindo',
-        link: 'https://www.google.com/search?q=cal%C3%A7ados+infantil&sca_esv=e1d839af44a7b9af&sxsrf=ADLYWIIT-2gr74MpBj1otdK4jJdtzlxBnA%3A1720041292495&ei=TL-FZqD1HeDC5OUP5OWMkAI&oq=cal%C3%A7ados+infan&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2NhbMOnYWRvcyBpbmZhbioCCAAyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESKQTUABYug1wAHgBkAEAmAGxAaABuw6qAQQwLjE0uAEDyAEA-AEBmAIOoAKgD8ICChAjGIAEGCcYigXCAgQQIxgnwgIQEC4YgAQY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYQxiKBcICCxAAGIAEGLEDGMkDwgIIEAAYgAQYsQPCAgsQABiABBiSAxiKBcICERAuGIAEGLEDGNEDGIMBGMcBmAMAkgcEMC4xNKAH1WY&sclient=gws-wiz-serp'
+        link: 'https://www.rihappy.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=[INST]Ri_Happy_Sul_e_Sudeste&gad_source=1&gclid=CjwKCAjwkJm0BhBxEiwAwT1AXBXcrLwrJBcWNb3uc2J5pNIq807BhD1sOLuAQdjjEU9KDKLEqM41IxoCChsQAvD_BwE'
       },
       {
         image: siliconeMae,
@@ -98,7 +98,7 @@ const Principal = () => {
           <p>
             Você está convidado(a) para uma aventura incrível no <span className="highlight">Aranhaverso do Aslam</span>! Estamos celebrando o 3º ano do nosso pequeno herói, Aslam, e seria uma honra ter você conosco nesse dia especial.
           </p>
-          <strong><p>Data: 10 de agosto de 2024</p></strong>
+          <strong><p>Data: 10 de Agosto de 2024</p></strong>
           <strong><p>Horário: 17h</p></strong>
           <p>Venha preparado(a) para um dia cheio de diversão, alegria e muitas surpresas! Esperamos encontrar você lá para tornar este dia ainda mais memorável.</p>
           <p>Confirme sua presença lá no botãozinho na página inicial!</p>
@@ -116,7 +116,7 @@ const Principal = () => {
           <img id='img' src={salaoImage} alt="" />
           <br />
           <br />
-          <p><strong>Clique abaixo e aperte os cintos!</strong></p>
+          <p><strong>Clique no mapa abaixo e aperte os cintos!</strong></p>
           <a href="https://maps.app.goo.gl/8s8AcAKtMiFomo3B7" target="_blank" rel="noopener noreferrer">
             <img id='pin' src={pinImg} alt="Pin" />
           </a>
