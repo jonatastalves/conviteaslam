@@ -7,18 +7,12 @@ import buttonBackground2 from './assets/button.png'; // caminho para o segundo P
 import './button.css';
 
 // eslint-disable-next-line react/prop-types
-const ImageButton = ({ text, imageType, routeUsed, userName }) => {
+const ImageButton = ({ text, imageType, routeUsed }) => {
 
   const navigate = useNavigate();
 
   const handleClick = () => {
-    if(routeUsed){
-      if (userName) {
-          navigate(routeUsed, { state: { userName } });
-      } else {
-          alert('Por favor, digite e salve seu nome antes de prosseguir.');
-      }
-    }
+    navigate(routeUsed)
     
 };
 

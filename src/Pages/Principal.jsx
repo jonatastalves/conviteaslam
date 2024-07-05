@@ -18,22 +18,7 @@ import siliconeMae from '../assets/silicone.png'
 const Principal = () => {
   const location = useLocation();
   const path = location.pathname;
-  const userName = location.state?.userName;
 
-  const [storedName, setStoredName] = useState('');
-
-    useEffect(() => {
-        // Carregar o nome do local storage, se disponível
-        let savedName = localStorage.getItem('userName');
-        if (!savedName) {
-            // Se o nome não estiver salvo, pedir ao usuário para digitar
-            savedName = prompt('Por favor, digite seu nome:');
-            if (savedName) {
-                localStorage.setItem('userName', savedName);
-            }
-        }
-        setStoredName(savedName);
-    }, []);
 
     const gifts = [
       {
@@ -94,7 +79,7 @@ const Principal = () => {
     case '/festa':
       content = (
         <div>
-          <p>Olá, <strong>{userName || 'querido(a) convidado(a)'}!</strong></p>
+          <p>Olá, <strong>querido amigo!</strong></p>
           <p>
             Você está convidado(a) para uma aventura incrível no <span className="highlight">Aranhaverso do Aslam</span>! Estamos celebrando o 3º ano do nosso pequeno herói, Aslam, e seria uma honra ter você conosco nesse dia especial.
           </p>
@@ -135,7 +120,7 @@ const Principal = () => {
     <div className="backPrincipal">
       <div className='section'>
         {content}
-        <ImageButton text='Voltar' imageType='vermelho' routeUsed='/' userName={storedName} />        
+        <ImageButton text='Voltar' imageType='vermelho' routeUsed='/' />        
       </div>
     </div>
   );
